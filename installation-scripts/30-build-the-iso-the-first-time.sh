@@ -29,9 +29,9 @@ echo
 	desktop="plasma"
 	dmDesktop="plasma"
 
-	carliVersion='v21.12.02'
+	#carliVersion='v21.12.02'
 
-	isoLabel='carli-'$carliVersion'-x86_64.iso'
+	isoLabel='carli-'$(date +%Y.%m.%d)'-x86_64.iso'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 59-1"
@@ -41,8 +41,8 @@ echo
 
 	echo "################################################################## "
 	echo "Building the desktop                   : "$desktop
-	echo "Building version                       : "$carliVersion
-	echo "Iso label                              : "$isoLabel
+	#echo "Building version                       : "$carliVersion
+	#echo "Iso label                              : "$isoLabel
 	echo "Do you have the right archiso version? : "$archisoVersion
 	echo "What is the required archiso version?  : "$archisoRequiredVersion
 	echo "Build folder                           : "$buildFolder

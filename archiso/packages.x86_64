@@ -121,14 +121,8 @@ zsh
 sddm
 bash-completion
 carli-keyring
-plasma-meta
-#kde-applications-meta
-packagekit-qt5
-partitionmanager
-dolphin
-konsole
-kate
-kinit
+xfce4
+xfce4-goodies
 
 #Calamares
 calamares
