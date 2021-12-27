@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "#################################"
+echo "Start carli-before"
+echo "#################################"
+
+echo "Populate Core Team keys"
+echo "#################################"
+pacman-key --init
+pacman-key --populate archlinux
+pacman-key --populate carli
+
+
+echo "Changing into our own linux.preset"
+echo "#################################"
+mv /etc/mkinitcpio.d/carli /etc/mkinitcpio.d/linux.preset
+
+echo "#################################"
+echo "End carli-before"
+echo "#################################"
+rm /usr/local/bin/carli-before
