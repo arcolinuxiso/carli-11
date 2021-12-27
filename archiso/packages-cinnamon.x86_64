@@ -118,6 +118,7 @@ xl2tpd
 zsh
 
 #Carli Desktop
+carli-grub-poly-light
 sddm
 bash-completion
 carli-keyring
@@ -141,4 +142,3 @@ yay-bin
 neofetch
 sublime-text-4
 networkmanager
-

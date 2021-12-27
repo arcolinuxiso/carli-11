@@ -33,7 +33,7 @@ rm /root/{.automated_script.sh,.zlogin}
 mv /etc/carli-release /etc/lsb-release
 
 #cleanup xfce
-for i in `ls /home/`; do rm -rf /home/$i/Desktop/calamares.desktop || exit 0; done
+for i in `ls /home/`; do rm -rf /home/$i/*/calamares.desktop || exit 0; done
 
 echo "Permission of root"
 echo "#################################"
