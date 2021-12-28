@@ -119,6 +119,7 @@ zsh
 
 #Carli Desktop
 carli-grub-poly-light
+carli-grub-poly-dark
 sddm
 bash-completion
 carli-keyring

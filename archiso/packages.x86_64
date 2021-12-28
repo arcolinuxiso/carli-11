@@ -119,6 +119,7 @@ zsh
 
 #Carli Desktop
 carli-grub-poly-light
+carli-grub-poly-dark
 sddm
 bash-completion
 carli-keyring
@@ -141,3 +142,24 @@ yay-bin
 neofetch
 sublime-text-4
 networkmanager
+
+#sound
+pipewire
+pipewire-media-session
+pipewire-alsa
+pipewire-jack
+pipewire-zeroconf
+pipewire-pulse
+pavucontrol
+
+#bluetooth
+blueberry
+
+#design
+papirus-icon-theme
+arc-gtk-theme
+capitaine-cursors
+
+#desktop related
+carli-xfce-config
+file-roller
