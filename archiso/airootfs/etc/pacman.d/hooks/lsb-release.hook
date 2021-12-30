@@ -1,0 +1,11 @@
+# Carli - neofetch logo
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = lsb-release
+
+[Action]
+Description = Copy /etc/carli-release to /etc/lsb-release
+When = PostTransaction
+Exec = /bin/sh -c "cp /etc/carli-release /etc/lsb-release"

@@ -167,3 +167,4 @@ file-roller
 gvfs
 gvfs-smb
 xdg-user-dirs-gtk
+lsb-release
