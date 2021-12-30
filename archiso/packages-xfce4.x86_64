@@ -165,3 +165,4 @@ carli-xfce-config
 file-roller
 gvfs
 gvfs-smb
+xdg-user-dirs-gtk
