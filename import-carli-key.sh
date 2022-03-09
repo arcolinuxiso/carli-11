@@ -30,6 +30,7 @@ echo "Download the keys from the github server"
 echo "and install them with sudo pacman -U ..."
 echo "https://github.com/arcolinuxiso/carli_repo/tree/master/x86_64 "
 echo "Download the keyring package"
+echo "Have a look at the included image"
 
 echo "################################################################"
 echo "###################        Done           ######################"
