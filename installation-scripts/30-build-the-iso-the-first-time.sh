@@ -84,6 +84,7 @@ echo "Phase 2 :"
 echo "- Checking if archiso is installed"
 echo "- Saving current archiso version to readme"
 echo "- Making mkarchiso verbose"
+echo "- Getting Carli key and mirror"
 tput sgr0
 echo "################################################################## "
 echo
@@ -139,6 +140,71 @@ echo
 	echo
 	echo "Making mkarchiso verbose"
 	sudo sed -i 's/quiet="y"/quiet="n"/g' /usr/bin/mkarchiso
+
+	#----------------------------------------------------------------------------------
+
+	package="carli-keyring"
+
+	#checking if application is already installed or else install
+	if pacman -Qi $package &> /dev/null; then
+
+			echo "################################################################"
+			echo "Carli keyring is already installed"
+			echo "################################################################"
+
+	else
+
+		wget https://github.com/arcolinuxiso/carli_repo/raw/master/x86_64/carli-keyring-2.1-4-any.pkg.tar.zst -O /tmp/carli-keyring-2.1-4-any.pkg.tar.zst
+		sudo pacman -U --noconfirm --needed /tmp/carli-keyring-2.1-4-any.pkg.tar.zst
+		
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		exit 1
+	fi
+
+	#----------------------------------------------------------------------------------
+
+	package="carli-mirrorlist"
+
+	#checking if application is already installed or else install
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "Carli mirrorlist is already installed"
+		echo "################################################################"
+
+	else
+
+		wget https://github.com/arcolinuxiso/carli_repo/raw/master/x86_64/carli-mirrorlist-22.03-01-any.pkg.tar.zst -O /tmp/carli-mirrorlist-22.03-01-any.pkg.tar.zst
+		sudo pacman -U --noconfirm --needed /tmp/carli-mirrorlist-22.03-01-any.pkg.tar.zst
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		exit 1
+	fi	
 
 echo
 echo "################################################################## "

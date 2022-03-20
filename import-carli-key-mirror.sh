@@ -46,11 +46,13 @@ echo
 # echo "https://github.com/arcolinuxiso/carli_repo/tree/master/x86_64 "
 # echo "Download the keyring package"
 # echo "Have a look at the included image"
-wget https://github.com/arcolinuxiso/carli_repo/raw/master/x86_64/carli-keyring-2.1-4-any.pkg.tar.zst -O /tmp/carli-keyring-2.1-4-any.pkg.tar.zst
-sudo pacman -U --noconfirm --needed /tmp/carli-keyring-2.1-4-any.pkg.tar.zst
-wget https://github.com/arcolinuxiso/carli_repo/raw/master/x86_64/carli-mirrorlist-22.03-01-any.pkg.tar.zst -O /tmp/carli-mirrorlist-22.03-01-any.pkg.tar.zst
-sudo pacman -U --noconfirm --needed /tmp/carli-mirrorlist-22.03-01-any.pkg.tar.zst
+# wget https://github.com/arcolinuxiso/carli_repo/raw/master/x86_64/carli-keyring-2.1-4-any.pkg.tar.zst -O /tmp/carli-keyring-2.1-4-any.pkg.tar.zst
+# sudo pacman -U --noconfirm --needed /tmp/carli-keyring-2.1-4-any.pkg.tar.zst
+# wget https://github.com/arcolinuxiso/carli_repo/raw/master/x86_64/carli-mirrorlist-22.03-01-any.pkg.tar.zst -O /tmp/carli-mirrorlist-22.03-01-any.pkg.tar.zst
+# sudo pacman -U --noconfirm --needed /tmp/carli-mirrorlist-22.03-01-any.pkg.tar.zst
 
 echo "################################################################"
-echo "###################        Done           ######################"
+echo "#######        WE NO LONGER USE THIS FILE          #############"
+echo "#######        it is part of script 30 and 40      #############"
+echo "#######      code stays for educational purposes   #############"
 echo "################################################################"

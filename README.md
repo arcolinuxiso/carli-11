@@ -2,22 +2,17 @@
 
 To be able to build you install this package
 
-sudo pacman -S archiso
+Build your iso by running script 30 or 40 in the folder
+installation scripts.
 
-Download also the Carli keyring and mirrorlist from github and install it with pacman -U.
+Archiso will be installed if not present.
+Carli keys will be installed if not present.
+Carli mirrors will be installed if not present.
 
-https://github.com/arcolinuxiso/carli_repo/tree/master/x86_64
-
-Download the last version.
-
-Install with pacman -U nameofthefile
-
-
-Or run the script 'import-carli-key-mirror.sh' to download and install them.
-
-
-Do check out the archiso.readme.
+Do check out the archiso.readme. There may be a difference between archiso 
+versions. That may lead to different results.
 
 Use the correct version of archiso.
 
-Start building your own carli version with the use of the scripts
+Start building your own carli version with the use of the scripts.
+Change the files - packages.x86_64 being the most important.

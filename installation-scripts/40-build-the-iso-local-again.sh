@@ -182,7 +182,7 @@ echo
 	if pacman -Qi $package &> /dev/null; then
 
 		echo "################################################################"
-		echo "Carli keyring is already installed"
+		echo "Carli mirrorlist is already installed"
 		echo "################################################################"
 
 	else
