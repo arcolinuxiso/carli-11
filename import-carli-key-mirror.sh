@@ -26,8 +26,8 @@
 #tput setaf 8 = light blue
 ##################################################################################################################
 
-echo "Since keyservers are less reliable these days we install the packages from our repo"
-echo
+#echo "Since keyservers are less reliable these days we install the packages from our repo"
+#echo
 # echo "Run the alias 'fix-pacman-keyserver'"
 # echo "in a terminal first to have the correct"
 # echo "keyservers in our /etc/pacman.d/gnupg/gpg.conf"
