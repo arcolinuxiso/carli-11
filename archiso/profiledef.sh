@@ -25,4 +25,5 @@ file_permissions=(
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/carli-before"]="0:0:755"
   ["/usr/local/bin/carli-final"]="0:0:755"
+  ["/usr/local/bin/get-nemesis"]="0:0:755"  
 )
