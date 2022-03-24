@@ -139,8 +139,8 @@ os-prober
 git
 base-devel
 yay-bin
-#neofetch
-carli-neofetch
+neofetch
+#carli-neofetch
 sublime-text-4
 networkmanager
 
