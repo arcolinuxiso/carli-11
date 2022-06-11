@@ -4,7 +4,7 @@ arch-install-scripts
 archinstall
 b43-fwcutter
 base
-bind-tools
+bind
 brltty
 broadcom-wl
 btrfs-progs
@@ -173,3 +173,5 @@ gvfs
 gvfs-smb
 xdg-user-dirs-gtk
 lsb-release
+
+sddm-elegant-theme-git
