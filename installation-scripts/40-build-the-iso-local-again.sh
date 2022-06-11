@@ -46,7 +46,7 @@ echo
 	isoLabel='carli-'$(date +%Y.%m.%d)'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 63-2"
+	archisoRequiredVersion="archiso 64-1"
 	buildFolder=$HOME"/carli-build"
 	outFolder=$HOME"/Carli-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
