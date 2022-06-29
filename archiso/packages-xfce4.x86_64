@@ -127,6 +127,7 @@ zsh
 #carli-grub-poly-light
 carli-grub-poly-dark
 sddm
+carli-sddm-breeze-minimal-git
 bash-completion
 carli-keyring
 xfce4

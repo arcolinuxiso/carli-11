@@ -127,6 +127,7 @@ zsh
 #carli-grub-poly-light
 carli-grub-poly-dark
 sddm
+carli-sddm-breeze-minimal-git
 bash-completion
 carli-keyring
 xfce4
@@ -173,5 +174,3 @@ gvfs
 gvfs-smb
 xdg-user-dirs-gtk
 lsb-release
-
-carli-sddm-breeze-minimal-git
