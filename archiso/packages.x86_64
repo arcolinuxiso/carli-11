@@ -152,7 +152,6 @@ networkmanager
 
 #sound
 pipewire
-pipewire-media-session
 pipewire-alsa
 pipewire-jack
 pipewire-zeroconf
