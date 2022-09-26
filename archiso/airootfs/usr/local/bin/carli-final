@@ -28,7 +28,6 @@ echo "Cleanup original files"
 echo "#################################"
 rm -f /etc/sudoers.d/g_wheel
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
-rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm /root/{.automated_script.sh,.zlogin}
 mv /etc/carli-release /etc/lsb-release
 
@@ -38,6 +37,12 @@ for i in `ls /home/`; do rm -rf /home/$i/*/calamares.desktop || exit 0; done
 echo "Permission of root"
 echo "#################################"
 chmod -v 750 /root
+
+echo "pacman-init"
+echo "#################################" 
+rm -f /etc/systemd/system/multi-user.target.wants/pacman-init.service
+rm -f /etc/systemd/system/pacman-init.service
+rm -f /etc/systemd/system/etc-pacman.d-gnupg.mount
 
 echo "#################################"
 echo "End carli-final"
