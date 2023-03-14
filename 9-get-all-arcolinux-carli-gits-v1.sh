@@ -33,6 +33,9 @@ echo "Fill the array with the original folders first"
 
 directories=(
 carli-1/
+carli-10/
+carli-11/
+carli-12/
 carli-2/
 carli-3/
 carli-4/
@@ -41,15 +44,18 @@ carli-6/
 carli-7/
 carli-8/
 carli-9/
-carli-10/
-carli-11/
 carli-calamares-config/
 carli-calamares-qml-config/
+carli-cinnamon-config/
+carli-grub-poly-dark/
 carli-grub-poly-light/
 carli-mirrorlist/
 carli-pkgbuild/
-carli_repo/
+carli-sddm-viper-theme/
 carli-system-installation/
+carli-viper-grub-theme/
+carli-xfce-config/
+carli_repo/
 )
 
 
